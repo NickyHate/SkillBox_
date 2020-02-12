@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <title>Никита Токарев</title>
+  <meta charset="utf-8">
+<!-- шрифт подключен по-другому, это пусть здесь останется на всякий случай
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media.css">
+  <script src="libs/jquery-3.3.1.min.js"></script>
+  <script src="libs/jquery.maskedinput.min.js"></script>
+  <script src="js/script.js"></script>
+
+<!--    favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+<!--    iconfont-->
+  <link rel="stylesheet" href="fonts/iconfont/iconfont.min.css">
+
+<!--    slick-->
+  <link rel="stylesheet" type="text/css" href="libs/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css"/>
+</head>
+<body>
+  <div class="popup-callback">
+    <form method="get" class="popup-callback__form">
+      <h3>Оставьте свой номер, и&nbsp;я&nbsp;Вам перезвоню</h3>
+      <input type="text" name="name" id="callback__name" maxlength="20" placeholder="Имя">
+      <input type="tel" name="tel" id="callback__tel" maxlength="11" placeholder="Телефон">
+      <button type="submit" class="popup-callback__submit">Заказать звонок</button>
+    </form>
+  </div>
+  <div class="popup-find-out-more">
+    <form method="get" class="popup-find-out-more__form">
+      <h3>Напишите мне, и&nbsp;я&nbsp;Вам отвечу в&nbsp;ближайшее время</h3>
+      <input type="text" name="name" id="find-out-more__name" maxlength="20" placeholder="Имя">
+      <input type="email" name="mail" id="find-out-more__mail" placeholder="E-mail">
+      <textarea name="find-out-more__question" id="find-out-more__question" placeholder="Ваш вопрос"></textarea>
+      <button type="submit" class="popup-find-out-more__submit">Отправить</button>
+    </form>
+  </div>
+  <header class="header">
+    <div class="container">
+      <button class="header__burger"></button>
+      <nav class="header__menu">
+        <ul>
+          <li><a href="#skills">Услуги</a></li>
+          <li><a href="#works">Портфолио</a></li>
+          <li><a href="#price">Стоимость</a></li>
+        </ul>
+      </nav>
+      <div class="header__phone">
+        <a href="tel:+7(499)999-99-99">+7 (911) 72-72-728</a>
+        <button class="callback">Заказать звонок</button>
+        <button class="header__callback_mobile"></button>
+      </div>
+    </div>
+  </header>
+  <nav class="mobile__menu">
+    <ul>
+      <li><a href="#skills">Услуги</a></li>
+      <li><a href="#works">Портфолио</a></li>
+      <li><a href="#price">Стоимость</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div class="about">
+      <div class="container">
+        <div class="flying-elements">
+          <div class="flying-elements__brackets_top">{&nbsp;}</div>
+          <div class="flying-elements__hashtag">#</div>
+          <div class="flying-elements__brackets_bottom">{&nbsp;}</div>
+          <div class="flying-elements__slash">&lt;/&gt;</div>
+          <div class="flying-elements__div_top">&lt;div&gt;</div>
+          <div class="flying-elements__div_bottom">&lt;div&gt;</div>
+        </div>
+        <div class="info">
+          <h1>Никита Токарев</h1>
+          <h3>Frontend-разработчик и веб-верстальщик</h3>
+          <button class="find-out-more">Узнать больше</button>
+        </div>
+        <div class="bubble">
+          <img alt="photo" src="img/photo.png">
+        </div>
+      </div>
+    </div>
+    <section id="skills" class="skills">
+      <h2>Что я делаю</h2>
+      <div class="container">
+        <div class="skills__unit-1">
+          <div class="skills__icon-1"></div>
+          <div class="skills__caption">Вёрстка лендинг–страниц и&nbsp;сайтов любой сложности</div>
+        </div>
+        <div class="skills__unit-2">
+          <div class="skills__icon-2"></div>
+          <div class="skills__caption">Адаптивная вёрстка под&nbsp;все браузеры и&nbsp;устройства</div>
+        </div>
+        <div class="skills__unit-3">
+          <div class="skills__icon-3"></div>
+          <div class="skills__caption">Frontend–разработка и&nbsp;программирование</div>
+        </div>
+        <div class="skills__unit-4">
+          <div class="skills__icon-4"></div>
+          <div class="skills__caption">Исправление и доработка существующей вёрстки</div>
+        </div>
+        <button class="see-price">Узнать стоимость</button>
+      </div>
+    </section>
+    <section id="works" class="works">
+      <h2>Примеры моих работ</h2>
+      <div class="container">
+        <div class="works__carousel">
+          <div>
+            <img src="img/work1.png" alt="work1">
+            Сайт психолога Веры Антоновой
+          </div>
+          <div>
+            <img src="img/work2.png" alt="work2">
+            Сайт магазина детской одежды
+          </div>
+          <div>
+            <img src="img/work3.png" alt="work3">
+            Сайт магазина «Рыболов»
+          </div>
+        </div>
+        <button class="order">Заказать проект</button>
+      </div>
+    </section>
+    <section id="price" class="price">
+      <div class="container">
+        <div class="flying-elements-price">
+          <div class="p__brackets_l">{&nbsp;}</div>
+          <div class="p__hashtag">#</div>
+          <div class="p__div">&lt;div&gt;</div>
+          <div class="p__slash">&lt;/&gt;</div>
+          <div class="p__brackets_r">{&nbsp;}</div>
+        </div>
+        <h3>Адаптивная вёрстка под все устройства
+и&nbsp;браузеры от 1000 рублей всего за&nbsp;4&nbsp;часа.&#42;</h3>
+* Срок и стоимость могут отличаться от&nbsp;заявленных и&nbsp;рассчитываются  индивидуально,
+в&nbsp;зависимости от сложности задач.
+      </div>
+    </section>
+    <section class="contacts">
+      <h3 class="visually-hidden">Контакты</h3>
+      <div class="container">
+        <div class="contacts__menu">
+          <ul>
+            <li><a href="#skills">Услуги</a></li>
+            <li><a href="#works">Портфолио</a></li>
+            <li><a href="#price">Стоимость</a></li>
+          </ul>
+        </div>
+        <div class="contacts__personal">
+          <ul>
+            <li><a href="tel:+7(499)999-99-99"><i class="icofont-ui-call"></i>+7 (911) 72-72-728</a></li>
+            <li><a href="mailto:nikitostokarev22@gmail.com"><i class="icofont-ui-message"></i>nikitostokarev22@gmail.com</a></li>
+          </ul>
+        </div>
+        <div class="contacts__social">
+          <button class="callback">Заказать звонок</button>
+          <div class="social-media">
+            <a class="social-media__vk" title="VK" href="https://vk.com/tt_35" target="_blank"></a>
+            <a class="social-media__fb" title="FB" href="https://www.facebook.com/nikitos.tokarev.14" target="_blank"></a>
+            <a class="social-media__tw" title="Twitter" href="https://twitter.com/" target="_blank"></a>
+            <a class="social-media__insta" title="Instagram" href="https://www.instagram.com/ne_tokarev" target="_blank"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    &copy; Никита Токарев, 2020
+  </footer>
+<!--    js for slick-->
+<script src="libs/slick/slick.min.js"></script>
+</body>
+</html>
